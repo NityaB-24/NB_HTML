@@ -7,7 +7,7 @@
 }
 
 :root {
-  --primary-color: #cdea2b;
+  --primary-color: #cdea66;
   --light-color: #f9fafb;
   --dark-color: #181818;
   --third-color: #004d43;
@@ -81,6 +81,7 @@ img {
   border-radius: 8px;
   color: var(--light-color);
   overflow: hidden;
+  border: 1px dotted var(--primary-color);
 }
 .card:hover {
   transform: translateY(-5px);
@@ -190,7 +191,7 @@ img {
 /* Hero */
 .hero {
   background: #000 url("../images/home_back.png") center center/cover no-repeat;
-  padding: 4.5rem 2rem 8rem;
+  padding: 4.5rem 2rem 5rem;
   color: #fff;
   overflow-x: hidden;
   position: relative;
@@ -201,7 +202,7 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 6rem;
-  padding-bottom: 8rem;
+  /* padding-bottom: 8rem; */
 }
 
 .hero h1 {
@@ -209,18 +210,41 @@ img {
   line-height: 1.2;
   font-weight: 700;
   margin-bottom: 1rem;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: opacity 2s ease, left 1s ease;
 }
 
+.hero h1.loaded {
+  left: 0;
+  opacity: 1;
+}
 .hero p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.8;
   font-weight: 400;
+  position: relative;
+  left: -100%;
+  opacity: 0;
+  transition: opacity 2s ease, left 1s ease;
 }
-
+.hero p.loaded {
+  left: 0;
+  opacity: 1;
+}
 .hero img {
   width: 100%;
-  margin-right: -100px;
+  position: relative;
+  right: -100%;
+  opacity: 0;
+  transition: opacity 2s ease, right 2s ease;
+}
+
+.hero img.loaded {
+  right: 0;
+  opacity: 1;
 }
 
 .hero .frame-decoration {
@@ -234,6 +258,7 @@ img {
 /* project Cards */
 #projects {
   background-color: var(--third-color);
+  padding-top: 70px;
 }
 
 .project-cards {
