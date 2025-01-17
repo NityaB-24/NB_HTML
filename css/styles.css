@@ -123,8 +123,8 @@ img {
   font-size: 1.2rem;
 }
 
-/* Hero */
-.hero {
+/* landing */
+.landing {
   background: #000 url("../images/home_back.png") center center/cover no-repeat;
   padding: 4.5rem 2rem 5rem;
   color: #fff;
@@ -132,7 +132,7 @@ img {
   position: relative;
 }
 
-.hero .hero-flex {
+.landing .landing-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,7 +140,7 @@ img {
   /* padding-bottom: 8rem; */
 }
 
-.hero h1 {
+.landing h1 {
   font-size: 3.5rem;
   line-height: 1.2;
   font-weight: 700;
@@ -151,11 +151,11 @@ img {
   transition: opacity 2s ease, left 1s ease;
 }
 
-.hero h1.loaded {
+.landing h1.loaded {
   left: 0;
   opacity: 1;
 }
-.hero p {
+.landing p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
   line-height: 1.8;
@@ -165,11 +165,11 @@ img {
   opacity: 0;
   transition: opacity 2s ease, left 1s ease;
 }
-.hero p.loaded {
+.landing p.loaded {
   left: 0;
   opacity: 1;
 }
-.hero img {
+.landing img {
   width: 100%;
   position: relative;
   right: -100%;
@@ -177,12 +177,12 @@ img {
   transition: opacity 1.5s ease, right 1.5s ease;
 }
 
-.hero img.loaded {
+.landing img.loaded {
   right: 0;
   opacity: 1;
 }
 
-.hero .frame-decoration {
+.landing .frame-decoration {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -359,17 +359,17 @@ img {
 
 /* Media Queries */
 @media (max-width: 992px) {
-  .hero {
+  .landing {
     text-align: center;
   }
 
-  .hero .hero-flex {
+  .landing .landing-flex {
     flex-direction: column;
     padding-bottom: 4rem;
     gap: 2rem;
   }
 
-  .hero img {
+  .landing img {
     max-width: 600px;
     margin-right: 0px;
   }
@@ -404,16 +404,16 @@ img {
 }
 
 @media (max-width: 576px) {
-  .hero {
+  .landing {
     padding-right: 0.2rem;
     padding-left: 0.2rem;
   }
 
-  .hero h1 {
+  .landing h1 {
     font-size: 2.5rem;
   }
 
-  .hero img {
+  .landing img {
     max-width: 350px;
     margin-right: 0px;
   }

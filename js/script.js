@@ -22,6 +22,6 @@ window.addEventListener("scroll", function () {
 // Added class for animation
 window.addEventListener("load", () => {
   document
-    .querySelectorAll(".hero img, .hero h1, .hero p")
+    .querySelectorAll(".landing img, .landing h1, .landing p")
     .forEach((element) => element.classList.add("loaded"));
 });
