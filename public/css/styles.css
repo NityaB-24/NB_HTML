@@ -189,7 +189,7 @@ img {
 
 /* Hero */
 .hero {
-  background: #000 url("./images/home_back.png") center center/cover no-repeat;
+  background: #000 url("../images/home_back.png") center center/cover no-repeat;
   padding: 4.5rem 2rem 8rem;
   color: #fff;
   overflow-x: hidden;
