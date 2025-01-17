@@ -19,11 +19,9 @@ window.addEventListener("scroll", function () {
   }
 });
 
+// Added class for animation
 window.addEventListener("load", () => {
-  const image = document.querySelector(".hero img");
-  const h1section = document.querySelector(".hero h1");
-  const psection = document.querySelector(".hero p");
-  image.classList.add("loaded");
-  h1section.classList.add("loaded");
-  psection.classList.add("loaded");
+  document
+    .querySelectorAll(".hero img, .hero h1, .hero p")
+    .forEach((element) => element.classList.add("loaded"));
 });
